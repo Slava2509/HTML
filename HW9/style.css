@@ -23,7 +23,7 @@ body {
 }
 .menu_link {
     color:#fff;
-    font-size 16px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -93,7 +93,7 @@ width: 53%;
 }
 
 .fa-solid, .fas {
-    padding-right: 10PX;
+    padding-right: 10px;
 }
 
 .logo {
