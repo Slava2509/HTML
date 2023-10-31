@@ -369,22 +369,17 @@ width: 53%;
         align-items: center;
     }
 
-    /* .content_left {
-        width: 573px;
-    } */
-
     .footer {
         display: flex;
         flex-direction: row;
         gap: 3%;
         flex-wrap: wrap;
-        lex-wrap: wrap;
         margin: 0 40px;  
     }
 
     .footer_item {
-       min-width: 47%;
-    };
+       max-width: 47%;
+    }
 }
 
 @media (max-width:768px){
@@ -477,6 +472,14 @@ width: 53%;
     
     .item {
         margin: 0 3%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .caption {
+        text-align: center;
     }
 
     
