@@ -1,3 +1,66 @@
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +99,11 @@ body {
     padding: 40px 16px;
 }
 
+.menu_link:hover {
+    transform: scale(1.2);
+    color: yellow;
+}
+
 .nav {
     display: flex;
     justify-content: center;
@@ -47,9 +115,7 @@ body {
     justify-content: space-between;
 }
 
-.menu_link:hover {
-    color: #3a6888;
-}
+
 
 .main {
     justify-content: flex-end;
@@ -94,12 +160,20 @@ width: 53%;
     gap: 20px;
 }
 
+.button_link:hover {
+    transform: scale(1.2);
+    color: darkcyan;
+}
+
 .main_link {
     color: #FFF;
     border-radius: 5px;
     padding: 15px 30px;
     background: var(--3-a-68-b-8, #3a6888);
     margin-right: 20px;
+    font-size: 16px;
+    font-weight: 600;
+
 }
 
 .fa-solid, .fas {
@@ -175,6 +249,11 @@ width: 53%;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+}
+
+.item:hover {
+    -webkit-animation: jello-horizontal 0.9s linear 1s forwards;
+	        animation: jello-horizontal 0.9s linear 1s forwards;
 }
 
 .headline {
@@ -293,6 +372,14 @@ width: 53%;
 .icons {
     gap: 24px;
     display: flex;
+}
+
+.icon_twitter:hover path{
+    fill: blueviolet;
+}
+
+.icon_youtube:hover path{
+    fill: red;
 }
 
 @media (max-width: 1024px) {
