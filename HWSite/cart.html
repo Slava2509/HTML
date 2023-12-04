@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="box_content">
+        <header class="header center">
+            <div class="header_left">
+                <a href="index.html" class="link_logo"><img src="img/logo.png" alt="logo"></a>
+                <a href="#" class="header_search"><img class="header_icons" src="img/search.svg" alt="search"></a>
+            </div>
+            <div class="header_right">
+                <!-- <a href="#" class="header_link_site"><img src="img/burger.svg" alt="burger"></a> -->
+                <div class="header_burger_menu">
+
+                    <label for="burger"><img class="header_icons" src="img/burger.svg" alt="burger-menu"></label>
+                    <input id="burger" type="checkbox" checked="checked">
+                    <nav class="header_nav">
+
+                        <h3 class="header_burger_headding">MENU</h3>
+
+                        <ul class="header_burger_nav"> MEN
+                            <li><a class="header_burger_link" href="#">T-Shirts</a></li>
+                            <li><a class="header_burger_link" href="#">Accesories</a></li>
+                            <li><a class="header_burger_link" href="#">Bags</a></li>
+                            <li><a class="header_burger_link" href="#">Denim</a></li>
+                        </ul>
+
+                        <ul class="header_burger_nav"> WOMAN
+                            <li><a class="header_burger_link" href="#">Accessories</a></li>
+                            <li><a class="header_burger_link" href="#">Jackets & Coats</a></li>
+                            <li><a class="header_burger_link" href="#">Polos</a></li>
+                            <li><a class="header_burger_link" href="#">T-Shirt</a></li>
+                            <li><a class="header_burger_link" href="#">Shirt</a></li>
+                        </ul>
+
+                        <ul class="header_burger_nav"> KIDS
+                            <li><a class="header_burger_link" href="#">Accessories</a></li>
+                            <li><a class="header_burger_link" href="#">Jackets & Coats</a></li>
+                            <li><a class="header_burger_link" href="#">Polos</a></li>
+                            <li><a class="header_burger_link" href="#">T-Shirts</a></li>
+                            <li><a class="header_burger_link" href="#">Shirts</a></li>
+                            <li><a class="header_burger_link" href="#">Bags</a></li>
+                        </ul>
+
+
+                    </nav>
+                </div>
+                <a href="#" class="header_link_site"><img class="header_icons" src="img/registration.svg"
+                        alt="registration"></a>
+                <a href="#" class="header_link_site"><img class="header_icons" src="img/cart.svg" alt="cart"></a>
+            </div>
+        </header>
+        <div class="top_head center">
+            <h2 class="top_head_title">SHOPPING CART</h2>
+        </div>
+
+        <div class="basket center">
+            <div class="basket_cart">
+                <div class="basket_cart_box">
+                    <div class="basket_cart_box_picture">
+                        <a href="product.html" class="basket_cart_link"><img class="basket_cart_box_img"
+                                src="img/product3.jpg" alt="product3"></a>
+                    </div>
+                    <div class="basket_cart_box_info">
+                        <h5 class="basket_cart_box_title">MANGO PEOPLE T-SHIRT</h5>
+                        <ul class="basket_cart_box_detail">
+                            <li class="basket_cart_box_text">Price: <span class="basket_cart_box_text_price">$300</span>
+                            </li>
+                            <li class="basket_cart_box_text">Color: <span class="basket_cart_box_text_color">
+                                    Red</span></li>
+                            <li class="basket_cart_box_text">Size: <span class="basket_cart_box_size">Xl</span>
+                            </li>
+                            <li class="basket_cart_box_text">Quantity: <input class="basket_cart_box_text_quantity"
+                                    type="number" value="1" min="1">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="basket_cart_box">
+                    <div class="basket_cart_box_picture">
+                        <a href="product.html" class="basket_cart_link"><img class="basket_cart_box_img"
+                                src="img/product6.jpg" alt="product3"></a>
+                    </div>
+                    <div class="basket_cart_box_info">
+                        <h5 class="basket_cart_box_title">MANGO PEOPLE T-SHIRT</h5>
+                        <ul class="basket_cart_box_detail">
+                            <li class="basket_cart_box_text">Price: <span class="basket_cart_box_text_price">$300</span>
+                            </li>
+                            <li class="basket_cart_box_text">Color: <span class="basket_cart_box_text_color">
+                                    Red</span></li>
+                            <li class="basket_cart_box_text">Size: <span class="basket_cart_box_size">Xl</span>
+                            </li>
+                            <li class="basket_cart_box_text">Quantity: <input class="basket_cart_box_text_quantity"
+                                    type="number" value="1" min="1">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="basket_cart_submit">
+                    <input type="submit" class="basket_cart_submit_box" value="CLEAR SHOPPING CART">
+                    <input type="submit" class="basket_cart_submit_box" value="CONTINUE SHOPPING">
+                </div>
+            </div>
+
+            <div class="basket_content">
+                <form action="#" class="basket_content_form">
+                    <h6 class="basket_content_form_heading">SHIPPING ADRESS</h6>
+                    <input class="basket_content_form_input" required type="text" placeholder="Bangladesh">
+                    <input class="basket_content_form_input" required type="text" placeholder="State">
+                    <input class="basket_content_form_input" required type="text" placeholder="Postcode / Zip">
+                    <input class="basket_cart_submit_box " type="submit" value="GET A QUOTE">
+                </form>
+            </div>
+        </div>
+
+
+
+        <section class="advertisement center">
+            <articles class="advertisement_item">
+                <img src="img/auto.svg" alt="delivery" class="advertisement_img">
+                <h3 class="advertisement_title">Free Delivery</h3>
+                <p class="advertisement_text">Worldwide delivery on all. Authorit tively morph next-generation innov
+                    tion
+                    with extensive models.</p>
+            </articles>
+            <articles class="advertisement_item">
+                <img src="img/sale.svg" alt="sale" class="advertisement_img">
+                <h3 class="advertisement_title">Sales & discounts</h3>
+                <p class="advertisement_text">Worldwide delivery on all. Authorit tively morph next-generation innov
+                    tion
+                    with extensive models.</p>
+            </articles>
+            <articles class="advertisement_item">
+                <img src="img/crown.svg" alt="crown" class="advertisement_img">
+                <h3 class="advertisement_title">Quality assurance</h3>
+                <p class="advertisement_text">Worldwide delivery on all. Authorit tively morph next-generation innov
+                    tion
+                    with extensive models.</p>
+            </articles>
+        </section>
+        <footer class="footer">
+            <div class="footer_input center">
+
+                <div class="footer_left">
+                    <img src="img/face.jpg" alt="face" footer_face_img>
+                    <p class="footer_face_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <b
+                            class="footer_text_italic">a pulvinar purus condimentum“</b>
+                    </p>
+                </div>
+                <div class="footer_rigth">
+                    <h2 class="footer_title"> SUBSCRIBE <br> <b class="footer_text_rigth">
+                            FOR OUR NEWLETTER AND PROMOTION</b>
+                    </h2>
+
+                    <form action="#" class="footer_contact">
+                        <input class="footer_form" type="email" placeholder="Enter you email">
+                        <button class="footer_btn" type="submit">Subcribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <div class="footer_info container">
+                    <p class="footer_bottom_text">© 2021 Brand All Rights Reserved.</p>
+                    <div class="footer_icons">
+                        <a href="#" class="footer_icons_link"><img src="img/facebook.svg" alt="facebook"
+                                class="footer_icons_img"></a>
+                        <a href="#" class="footer_icons_link"><img src="img/instagram.svg" alt="instagram"
+                                class="footer_icons_img"></a>
+                        <a href="#" class="footer_icons_link"><img src="img/pinterest.svg" alt="pinterest"
+                                class="footer_icons_img"></a>
+                        <a href="#" class="footer_icons_link"><img src="img/twitter.svg" alt="twitter"
+                                class="footer_icons_img"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

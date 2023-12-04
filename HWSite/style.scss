@@ -83,6 +83,14 @@ summary::-webkit-details-marker {
         transition: right .3s;
     }
 
+    &_burger_menu {
+        z-index: 100;
+    }
+
+    &_burger_menu:hover .header_icons {
+        filter: invert(53%) sepia(46%) saturate(679%) hue-rotate(304deg) brightness(96%) contrast(96%);
+    }
+
     #burger {
         position: absolute;
         left: -999999px;
@@ -121,7 +129,14 @@ summary::-webkit-details-marker {
 
         &:hover {
             color: $colorTextStyle;
+            transform: translate(-10px);
+            display: block;
         }
+    }
+
+    &_link_site:hover .header_icons {
+        filter: invert(53%) sepia(46%) saturate(679%) hue-rotate(304deg) brightness(96%) contrast(96%);
+
     }
 
 }
@@ -254,6 +269,10 @@ summary::-webkit-details-marker {
         grid-template-columns: repeat(auto-fit, 360px);
         gap: 30px;
         justify-content: center;
+
+        &_box_margin {
+            margin-bottom: 128px;
+        }
     }
 
     &_item {
@@ -545,6 +564,28 @@ summary::-webkit-details-marker {
     height: 148px;
     align-items: center;
 
+    &_breadcrumbs_ul {
+        list-style-type: none;
+        display: flex;
+
+    }
+
+    &_breadcrumbs_li:not(:last-child)::after {
+        content: '/';
+        padding-left: 8px;
+        padding-right: 8px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363
+    }
+
+    &_breadcrumbs_li:last-child .top_head_breadcrumbs_link {
+        color: $colorTextStyle;
+        font-weight: 700;
+    }
+
+
     &_title {
         color: $colorTextStyle;
         font-size: 24px;
@@ -556,12 +597,13 @@ summary::-webkit-details-marker {
         color: #636363;
         font-size: 14px;
         font-weight: 300;
+
     }
 
-    &_breadcrumbs_link_site {
+    &_breadcrumbs_link:hover {
         color: $colorTextStyle;
-        font-weight: 700;
     }
+
 }
 
 .filter {
@@ -650,6 +692,8 @@ summary::-webkit-details-marker {
 
         &:hover {
             color: $colorTextStyle;
+            transform: translate(-10px);
+            display: block;
         }
 
     }
@@ -703,5 +747,257 @@ summary::-webkit-details-marker {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+    }
+}
+
+//классы для страницы продукт
+
+.cart_product {
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // &_link:hover .cart_product_link_img {
+    //     fill: red;
+
+    // }
+
+    &_link_img {
+        border: 1px solid #000;
+        background-color: #bcbbbb;
+    }
+
+    &_img {
+        padding-top: 11px;
+    }
+
+    &_link_next {
+        transform: rotate(180deg);
+    }
+
+
+
+}
+
+.product_info {
+
+    &_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #EAEAEA;
+        transform: translateY(-41px);
+        background: #fff;
+        margin-bottom: 39px;
+    }
+
+
+    &_title {
+        color: $colorTextStyle;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        padding-top: 65px;
+    }
+
+    &_line {
+        margin-top: 12px;
+        border: 3px solid #F16D7F;
+        width: 63px;
+        background: #F16D7F;
+    }
+
+    &_headding {
+        color: #4D4D4D;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 17px;
+        padding-top: 12px;
+
+    }
+
+    &_text {
+        padding-top: 48px;
+        padding-right: 293px;
+        padding-left: 293px;
+        padding-bottom: 33px;
+        color: #5E5E5E;
+        text-align: center;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &_price {
+        color: $colorTextStyle;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 17px;
+        margin-bottom: 65px;
+    }
+
+    &_line_bottom {
+        border-bottom: 1px solid #EAEAEA;
+        width: 641px;
+    }
+
+    &_filter {
+        display: flex;
+        justify-content: center;
+        gap: 42px;
+        padding-top: 65px;
+        padding-bottom: 48px;
+    }
+
+    &_filter_text {
+        color: #6F6E6E;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    &_add_box {
+        margin-bottom: 64px;
+    }
+
+    &_add_box:hover .product_info_cart_svg {
+        fill: #000;
+    }
+
+    &_add {
+        padding: 15px 54px 15px 24px;
+        text-decoration: none;
+        align-items: center;
+        border: 1px solid $colorTextStyle;
+        display: flex;
+    }
+
+
+    &_img_cart {
+        margin-right: 22px;
+    }
+
+    &_cart_txt {
+        color: $colorTextStyle;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+
+}
+
+//классы для страницы корзины 
+
+.basket {
+    padding-top: 96px;
+    padding-bottom: 72px;
+    display: flex;
+    justify-content: space-between;
+
+    &_cart {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 50%;
+
+        &_box {
+            display: flex;
+            box-shadow: 0 0 20px;
+
+            &_info {
+                padding-top: 22px;
+                padding-left: 37px;
+                padding-right: 97px;
+                display: flex;
+                flex-direction: column;
+                gap: 42px;
+            }
+
+            &_title {
+                color: #222;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 28px;
+            }
+
+            &_detail {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+            }
+
+            &_text {
+                color: #575757;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+
+                &_price {
+                    color: $colorTextStyle;
+                }
+
+                &_quantity {
+                    width: 15%;
+                    padding-left: 5px;
+                    margin-left: 24px;
+                    border: 1px solid #eaeaea;
+                }
+            }
+        }
+
+        &_submit {
+            display: flex;
+            justify-content: space-between;
+
+            &_box {
+                width: 32%;
+                height: 35px;
+                margin-top: 24px;
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 13px;
+                color: #4A4A4A;
+                background: #fff;
+
+                &:hover {
+                    background-color: $colorTextStyle;
+                    color: #fff;
+
+                }
+            }
+
+
+        }
+    }
+
+    &_content {
+        width: 50%;
+
+        &_form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-left: 128px;
+
+            &_heading {
+                color: #222;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            &_input {
+                height: 45px;
+                color: #222;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
     }
 }
