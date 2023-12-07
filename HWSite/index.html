@@ -11,17 +11,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@600;700;800&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aabe1e7da7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="box_content">
         <header class="header center">
             <div class="header_left">
-                <a href="index.html" class="link_logo"><img src="img/logo.png" alt="logo"></a>
-                <a href="#" class="header_search"><img class="header_icons" src="img/search.svg" alt="search"></a>
+                <a href="index.html" class="header_link_logo"><img src="img/logo.png" alt="logo"></a>
+                <a href="#" class="header_search"><span class="fa-solid fa-magnifying-glass"></span></a>
             </div>
             <div class="header_right">
-                <!-- <a href="#" class="header_link_site"><img src="img/burger.svg" alt="burger"></a> -->
+
                 <div class="header_burger_menu">
 
                     <label for="burger"><img class="header_icons" src="img/burger.svg" alt="burger-menu"></label>
@@ -57,8 +58,8 @@
 
                     </nav>
                 </div>
-                <a href="#" class="header_link_site"><img class="header_icons" src="img/registration.svg"
-                        alt="registration"></a>
+                <a href="registration.html" class="header_link_site"><img class="header_icons"
+                        src="img/registration.svg" alt="registration"></a>
                 <a href="cart.html" class="header_link_site"><img class="header_icons" src="img/cart.svg"
                         alt="cart"></a>
             </div>
@@ -75,7 +76,7 @@
         <section class="sale center">
             <div class="sale_item">
                 <div class="sale_img">
-                    <img src="img/saleWoman.jpg" alt="sale_woman">
+                    <img class="sale_item_img" src="img/saleWoman.jpg" alt="sale_woman">
                 </div>
                 <div class="sale_content">
                     <p class="sale_text">30% OFF</p>
@@ -84,7 +85,7 @@
             </div>
             <div class="sale_item">
                 <div class="sale_img">
-                    <img src="img/saleMen.jpg" alt="sale_men">
+                    <img class="sale_item_img" src="img/saleMen.jpg" alt="sale_men">
                 </div>
                 <div class="sale_content">
                     <p class="sale_text">HOT DEAL</p>
@@ -93,14 +94,14 @@
             </div>
             <div class="sale_item">
                 <div class="sale_img">
-                    <img src="img/saleKids.jpg" alt="sale_kids">
+                    <img class="sale_item_img" src="img/saleKids.jpg" alt="sale_kids">
                 </div>
                 <div class="sale_content">
                     <p class="sale_text">NEW ARRIVALS</p>
                     <h3 class="sale_heading">FOR KIDS</h3>
                 </div>
             </div>
-            <div class="sale_item">
+            <div class="sale_item sale_scaling">
                 <div class="sale_img">
                     <img class="sale_item_big" src="img/saleTrend.jpg" alt="sale_trend">
                 </div>
@@ -274,7 +275,7 @@
             <div class="footer_input center">
 
                 <div class="footer_left">
-                    <img src="img/face.jpg" alt="face" footer_face_img>
+                    <img src="img/face.jpg" alt="face" class="footer_left_face_img">
                     <p class="footer_face_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <b
                             class="footer_text_italic">a pulvinar purus condimentum“</b>
                     </p>
@@ -285,7 +286,7 @@
                     </h2>
 
                     <form action="#" class="footer_contact">
-                        <input class="footer_form" type="email" placeholder="Enter you email">
+                        <input class="footer_form" type="email" required placeholder="Enter you email">
                         <button class="footer_btn" type="submit">Subcribe</button>
                     </form>
                 </div>

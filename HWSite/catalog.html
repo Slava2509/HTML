@@ -3,14 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Catalog</title>
-    <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aabe1e7da7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,10 +23,10 @@
         <header class="header center">
             <div class="header_left">
                 <a href="index.html" class="link_logo"><img src="img/logo.png" alt="logo"></a>
-                <a href="#" class="header_search"><img class="header_icons" src="img/search.svg" alt="search"></a>
+                <a href="#" class="header_search"><span class="fa-solid fa-magnifying-glass"></span></a>
             </div>
             <div class="header_right">
-                <!-- <a href="#" class="header_link_site"><img src="img/burger.svg" alt="burger"></a> -->
+
                 <div class="header_burger_menu">
 
                     <label for="burger"><img class="header_icons" src="img/burger.svg" alt="burger-menu"></label>
@@ -57,8 +62,8 @@
 
                     </nav>
                 </div>
-                <a href="#" class="header_link_site"><img class="header_icons" src="img/registration.svg"
-                        alt="registration"></a>
+                <a href="registration.html" class="header_link_site"><img class="header_icons"
+                        src="img/registration.svg" alt="registration"></a>
                 <a href="cart.html" class="header_link_site"><img class="header_icons" src="img/cart.svg"
                         alt="cart"></a>
             </div>
@@ -372,6 +377,22 @@
             </div>
         </div>
 
+        <div class="paginator_bootstrap">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link paginator_link">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link paginator_link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link paginator_link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link paginator_link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link paginator_link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link paginator_link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link paginator_link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
         <section class="advertisement center">
             <articles class="advertisement_item">
                 <img src="img/auto.svg" alt="delivery" class="advertisement_img">
@@ -400,7 +421,7 @@
             <div class="footer_input center">
 
                 <div class="footer_left">
-                    <img src="img/face.jpg" alt="face" footer_face_img>
+                    <img src="img/face.jpg" alt="face" class="footer_left_face_img">
                     <p class="footer_face_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <b
                             class="footer_text_italic">a pulvinar purus condimentum“</b>
                     </p>
@@ -411,7 +432,7 @@
                     </h2>
 
                     <form action="#" class="footer_contact">
-                        <input class="footer_form" type="email" placeholder="Enter you email">
+                        <input class="footer_form" type="email" required placeholder="Enter you email">
                         <button class="footer_btn" type="submit">Subcribe</button>
                     </form>
                 </div>
@@ -434,6 +455,12 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

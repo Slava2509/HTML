@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@600;700;800&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aabe1e7da7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,10 +19,10 @@
         <header class="header center">
             <div class="header_left">
                 <a href="index.html" class="link_logo"><img src="img/logo.png" alt="logo"></a>
-                <a href="#" class="header_search"><img class="header_icons" src="img/search.svg" alt="search"></a>
+                <a href="#" class="header_search"><span class="fa-solid fa-magnifying-glass"></span></a>
             </div>
             <div class="header_right">
-                <!-- <a href="#" class="header_link_site"><img src="img/burger.svg" alt="burger"></a> -->
+
                 <div class="header_burger_menu">
 
                     <label for="burger"><img class="header_icons" src="img/burger.svg" alt="burger-menu"></label>
@@ -57,8 +58,8 @@
 
                     </nav>
                 </div>
-                <a href="#" class="header_link_site"><img class="header_icons" src="img/registration.svg"
-                        alt="registration"></a>
+                <a href="registration.html" class="header_link_site"><img class="header_icons"
+                        src="img/registration.svg" alt="registration"></a>
                 <a href="cart.html" class="header_link_site"><img class="header_icons" src="img/cart.svg"
                         alt="cart"></a>
             </div>
@@ -78,16 +79,22 @@
         <div class="cart_product">
             <div class="cart_product_btn ">
                 <a href="#" class="cart_product_link">
-                    <img class="cart_product_link_img" src="img/previos.svg" alt="previos">
+                    <div class="cart_product_link_img">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
                 </a>
             </div>
+
             <div class="cart_product_img">
                 <img src="img/product7.jpg" alt="product7" class="cart_product_img">
 
             </div>
+
             <div class="cart_product_btn ">
                 <a href="#" class="cart_product_link">
-                    <img class="cart_product_link_img cart_product_link_next" class="" src="img/previos.svg" alt="next">
+                    <div class="cart_product_link_img cart_product_link_next">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
                 </a>
             </div>
         </div>
@@ -203,7 +210,8 @@
 
                 <div class="product_info_add_box">
                     <a href="#" class="product_info_add">
-                        <img src="img/cart_red.svg" alt="cart" class="product_info_img_cart">
+                        <!-- <img src="img/cart_red.svg" alt="cart" class="product_info_img_cart"> -->
+
                         <p class="product_info_cart_txt">Add to Cart</p>
                     </a>
                 </div>
@@ -273,11 +281,11 @@
             </div>
         </div>
 
-        <footer class="footer footer_margin">
+        <footer class="footer">
             <div class="footer_input center">
 
                 <div class="footer_left">
-                    <img src="img/face.jpg" alt="face" footer_face_img>
+                    <img src="img/face.jpg" alt="face" class="footer_left_face_img">
                     <p class="footer_face_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <b
                             class="footer_text_italic">a pulvinar purus condimentum“</b>
                     </p>
@@ -288,7 +296,7 @@
                     </h2>
 
                     <form action="#" class="footer_contact">
-                        <input class="footer_form" type="email" placeholder="Enter you email">
+                        <input class="footer_form" type="email" required placeholder="Enter you email">
                         <button class="footer_btn" type="submit">Subcribe</button>
                     </form>
                 </div>
