@@ -256,6 +256,18 @@ summary::-webkit-details-marker {
     &_burger_menu:hover .header_icons {
         filter: invert(53%) sepia(46%) saturate(679%) hue-rotate(304deg) brightness(96%) contrast(96%);
         transform: scale(1.1);
+
+
+    }
+
+    .header_link_site {
+        position: relative;
+    }
+
+    .header_icons_cart_circle {
+        top: -5px;
+        position: absolute;
+        right: -8px;
     }
 
     #burger {
@@ -759,6 +771,7 @@ summary::-webkit-details-marker {
     background-color: #F8F3F4;
     height: 148px;
     align-items: center;
+    padding-left: 10px;
 
     &_breadcrumbs_ul {
         list-style-type: none;
@@ -1121,6 +1134,7 @@ summary::-webkit-details-marker {
     padding-bottom: 72px;
     display: flex;
     justify-content: space-between;
+    padding-left: 10px;
 
     &_cart {
         display: flex;
@@ -1135,7 +1149,7 @@ summary::-webkit-details-marker {
 
             &_link {
                 display: flex;
-                height: 100%;
+
             }
 
             &_info {
@@ -1181,8 +1195,8 @@ summary::-webkit-details-marker {
 
             &_delete {
                 position: absolute;
-                right: 22px;
-                top: 28px;
+                right: 2%;
+                top: 3%;
                 pointer-events: visible;
 
                 &:hover path {
@@ -1196,7 +1210,7 @@ summary::-webkit-details-marker {
             justify-content: space-between;
 
             &_box {
-                width: 32%;
+                width: 38%;
                 height: 35px;
                 margin-top: 24px;
                 font-weight: 300;
@@ -1582,6 +1596,25 @@ summary::-webkit-details-marker {
     .basket_content {
         flex-direction: column;
         gap: 48px;
+    }
+
+    .basket_cart_box_info {
+        gap: 25px;
+        padding-top: 13px;
+        padding-left: 5px;
+        padding-right: 16px;
+    }
+
+    .basket_cart_box_detail {
+        gap: 4px;
+    }
+
+    .basket_cart_box_title {
+        font-size: 16px;
+    }
+
+    .basket_cart_box_text {
+        font-size: 14px;
     }
 
     .basket_content_form {

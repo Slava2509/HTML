@@ -143,6 +143,14 @@ summary::-webkit-details-marker {
   filter: invert(53%) sepia(46%) saturate(679%) hue-rotate(304deg) brightness(96%) contrast(96%);
   transform: scale(1.1);
 }
+.header .header_link_site {
+  position: relative;
+}
+.header .header_icons_cart_circle {
+  top: -5px;
+  position: absolute;
+  right: -8px;
+}
 .header #burger {
   position: absolute;
   left: -999999px;
@@ -554,6 +562,7 @@ summary::-webkit-details-marker {
   background-color: #F8F3F4;
   height: 148px;
   align-items: center;
+  padding-left: 10px;
 }
 .top_head_breadcrumbs_ul {
   list-style-type: none;
@@ -851,6 +860,7 @@ summary::-webkit-details-marker {
   padding-bottom: 72px;
   display: flex;
   justify-content: space-between;
+  padding-left: 10px;
 }
 .basket_cart {
   display: flex;
@@ -865,7 +875,6 @@ summary::-webkit-details-marker {
 }
 .basket_cart_box_link {
   display: flex;
-  height: 100%;
 }
 .basket_cart_box_info {
   padding-top: 22px;
@@ -903,8 +912,8 @@ summary::-webkit-details-marker {
 }
 .basket_cart_box_delete {
   position: absolute;
-  right: 22px;
-  top: 28px;
+  right: 2%;
+  top: 3%;
   pointer-events: visible;
 }
 .basket_cart_box_delete:hover path {
@@ -915,7 +924,7 @@ summary::-webkit-details-marker {
   justify-content: space-between;
 }
 .basket_cart_submit_box {
-  width: 32%;
+  width: 38%;
   height: 35px;
   margin-top: 24px;
   font-weight: 300;
@@ -1218,6 +1227,21 @@ summary::-webkit-details-marker {
   .basket_content {
     flex-direction: column;
     gap: 48px;
+  }
+  .basket_cart_box_info {
+    gap: 25px;
+    padding-top: 13px;
+    padding-left: 5px;
+    padding-right: 16px;
+  }
+  .basket_cart_box_detail {
+    gap: 4px;
+  }
+  .basket_cart_box_title {
+    font-size: 16px;
+  }
+  .basket_cart_box_text {
+    font-size: 14px;
   }
   .basket_content_form {
     width: 100%;
